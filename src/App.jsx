@@ -9,7 +9,11 @@ export default function App() {
                     <IconBrandTwitter />
                     Login
                 </Button>
-                <Button onClick={() => console.log('Register')} type='submit'>
+                <Button
+                    className='bg-green-600'
+                    onClick={() => console.log('Register')}
+                    type='submit'
+                >
                     <IconBrandFacebook />
                     Register
                 </Button>
@@ -19,11 +23,11 @@ export default function App() {
 }
 
 function Button(props) {
-    const { children } = props;
+    const { className = 'bg-blue-600', children } = props;
     return (
         <button
             {...props}
-            className='[&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1 flex items-center gap-x-2 bg-blue-600 rounded text-white px-4 py-2'
+            className={`${className} [&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1 flex items-center gap-x-2 rounded text-white px-4 py-2`}
         >
             {children}
         </button>
