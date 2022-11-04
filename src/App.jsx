@@ -5,11 +5,11 @@ export default function App() {
         <div className='bg-slate-900 grid min-h-screen place-content-center'>
             <div className='flex gap-x-2'>
                 {/* Output Sign up semua! */}
-                <Button type='button'>
+                <Button onClick={() => console.log('Login')} type='button'>
                     <IconBrandTwitter />
                     Login
                 </Button>
-                <Button type='submit'>
+                <Button onClick={() => console.log('Register')} type='submit'>
                     <IconBrandFacebook />
                     Register
                 </Button>
