@@ -1,11 +1,20 @@
-import { IconBrandFacebook, IconBrandTwitter } from '@tabler/icons';
+import {
+    IconBrandFacebook,
+    IconBrandGithub,
+    IconBrandTwitter,
+} from '@tabler/icons';
 import clsx from 'clsx';
 
 export default function App() {
+    const type = 'tambah';
+    const onClick = () => console.log('Login with another style ...');
     return (
         <div className='bg-slate-900 grid min-h-screen place-content-center'>
             <div className='flex gap-x-2'>
-                {/* Output Sign up semua! */}
+                <Button {...{ type, onClick }}>
+                    <IconBrandGithub />
+                    Login
+                </Button>
                 <Button onClick={() => console.log('Login')} type='button'>
                     <IconBrandTwitter />
                     Login
