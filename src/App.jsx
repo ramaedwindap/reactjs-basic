@@ -1,8 +1,6 @@
 import {
-    IconBrandAdobe,
     IconBrandFacebook,
     IconBrandGithub,
-    IconBrandGmail,
     IconBrandReact,
     IconBrandTwitter,
 } from '@tabler/icons';
