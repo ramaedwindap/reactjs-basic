@@ -1,6 +1,9 @@
 import {
+    IconBrandAdobe,
     IconBrandFacebook,
     IconBrandGithub,
+    IconBrandGmail,
+    IconBrandReact,
     IconBrandTwitter,
 } from '@tabler/icons';
 import clsx from 'clsx';
@@ -22,10 +25,13 @@ export default function App() {
                 <Button
                     className='bg-green-600'
                     onClick={() => console.log('Register')}
-                    type='submit'
                 >
                     <IconBrandFacebook />
                     Register
+                </Button>
+                <Button onClick={() => console.log('Reset')} type='reset'>
+                    <IconBrandReact />
+                    Reset
                 </Button>
             </div>
         </div>
@@ -33,10 +39,11 @@ export default function App() {
 }
 
 function Button(props) {
-    const { className = 'bg-blue-600', children } = props;
+    const { className = 'bg-blue-600', children, type = 'submit' } = props;
     return (
         <button
             {...props}
+            type={type}
             className={clsx(
                 className,
                 '[&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1 flex items-center gap-x-2 rounded text-white px-4 py-2'
