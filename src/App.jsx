@@ -1,28 +1,13 @@
-import { IconBrandFacebook, IconBrandGithub, IconBrandReact, IconBrandTwitter } from '@tabler/icons';
-import Button from './components/Button';
+import Card from './components/Card';
 
 export default function App() {
-    const type = 'tambah';
-    const onClick = () => console.log('Login with another style ...');
     return (
-        <div className='bg-slate-900 grid min-h-screen place-content-center'>
-            <div className='flex gap-x-2'>
-                <Button {...{ type, onClick }}>
-                    <IconBrandGithub />
-                    Login
-                </Button>
-                <Button onClick={() => console.log('Login')} type='button'>
-                    <IconBrandTwitter />
-                    Login
-                </Button>
-                <Button className='bg-green-600' onClick={() => console.log('Register')}>
-                    <IconBrandFacebook />
-                    Register
-                </Button>
-                <Button onClick={() => console.log('Reset')} type='reset'>
-                    <IconBrandReact />
-                    Reset
-                </Button>
+        <div className='bg-slate-100 antialiased flex items-center justify-center min-h-screen '>
+            <div className='max-w-md w-full'>
+                <Card>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia inventore porro ipsa delectus ducimus doloribus, quidem iure ex
+                    labore, quae iste nemo non quia harum. Culpa ut dolorem ipsum maiores?
+                </Card>
             </div>
         </div>
     );
