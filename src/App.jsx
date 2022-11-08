@@ -6,8 +6,9 @@ export default function App() {
     const [name, setName] = useState('Rama');
 
     function handleClick() {
-        setName('ramepitsme!');
-        console.log(name);
+        const nextName = 'ramepitsme!';
+        setName(nextName);
+        console.log({ name, nextName });
     }
 
     return (
