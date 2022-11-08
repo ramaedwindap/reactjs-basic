@@ -1,11 +1,13 @@
 import PlaceContentCenter from './components/PlaceContentCenter';
 import Button from './components/Button';
+import { useState } from 'react';
 
 export default function App() {
-    let name = 'Rama Edwinda Putra';
+    const [name, setName] = useState('Rama');
 
     function handleClick() {
-        name = 'ramepitsme!';
+        setName('ramepitsme!');
+        console.log(name);
     }
 
     return (
