@@ -3,17 +3,17 @@ import Button from './components/Button';
 import { useState } from 'react';
 
 export default function App() {
-    const [name, setName] = useState('Rama');
+    const [count, setCount] = useState(0);
 
     function handleClick() {
-        const nextName = 'ramepitsme!';
-        setName(nextName);
-        console.log({ name, nextName });
+        const nextCount = count + 1;
+        setCount(nextCount);
+        console.log({ count, nextCount });
     }
 
     return (
         <PlaceContentCenter>
-            <div>{name}</div>
+            <div className={'text-5xl font-bold mb-5'}>{count}</div>
             <Button onClick={handleClick}>Change Name</Button>
         </PlaceContentCenter>
     );
