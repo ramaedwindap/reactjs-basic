@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 function Card({ children }) {
     return (
         <div className=' bg-white rounded overflow-hidden shadow'>
@@ -9,13 +11,13 @@ function Card({ children }) {
 function Title({ children }) {
     return (
         <h1 className='p-4 border-b'>
-            <div className='text-xl'> {children}</div>
+            <div className='text-xl text-black'> {children}</div>
         </h1>
     );
 }
 
-function Body({ children }) {
-    return <h1 className='p-4 leading-relaxed'>{children}</h1>;
+function Body({ className = 'text-black', children }) {
+    return <h1 className={clsx(className, 'p-4 leading-relaxed')}>{children}</h1>;
 }
 
 function Footer({ children }) {

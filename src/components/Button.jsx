@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export default function Button({ className = 'bg-blue-600', children, type = 'submit', ...props }) {
+export default function Button({ className = 'bg-black', children, type = 'submit', ...props }) {
     return (
         <button
             type={type}
