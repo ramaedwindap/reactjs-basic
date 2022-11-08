@@ -4,7 +4,7 @@ import Counter from './components/Counter';
 export default function App() {
     return (
         <PlaceContentCenter>
-            <Counter />
+            <Counter initialValue={10} />
         </PlaceContentCenter>
     );
 }
